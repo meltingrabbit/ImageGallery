@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #333;	/*全体の文字色*/
+	/*font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	フォント種類*/
+	/*font-family: "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	フォント種類*/
+	/*font-size: 14px;	文字サイズ*/
+	/*font-size: 14px;*/
+	/*line-height: 2;		行間*/
+	/*line-height: 2;*/
+	background: #eee;	/*背景色*/
+}
+
+
+
+#menubar.PC {
+	width: 100%;
+	background-color: #000;
+	text-align: center;
+}
+#menubar.PC a {
+	color: #fff;
+}
+#menubar.PC a:hover {
+	color: #bbb;
+}
+#menubar.PC li {
+	/*display: inline;	横並びにする設定*/
+	/*inline-blockでは隙間が入るので注意！！ */
+	display: inline-block;
+	width: 145px;
+	font-size: 14px;
+	color: #fff;
+	padding-top: 40px;
+}
+#menubar.PC img {
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: inline-block;
+	width: 277px;
+}
+
+
+
+.control-panel input,
+.control-panel select {
+
+	/*chromeのデフォルト削除*/
+	/* http://webdesignmagazine.net/html-css/google-chrome_outline/ */
+	outline: none;
+
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Verdana, "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+
+	border:0;
+	padding:4px;
+	/*font-size:1.3em;*/
+	/*color:#aaa;*/
+	border:solid 1px #ccc;
+	/*margin:0 0 20px;*/
+	/*width:300px;*/
+	/*-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;*/
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.control-panel>div {
+	position: relative;
+	/*margin: 10px;*/
+	margin: 0.5%;
+	padding: 7px 1%;
+	background-color: #FFF;
+}
+.control-panel>div>div {
+	/*position: absolute;*/
+/*	top: 0;
+	bottom: 0*/;
+	margin: 0 20px;
+	/*margin: auto;*/
+}
+
+.control-panel * {
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.control-panel div input[name="page"] {
+	width: 45px;
+}
+
+.control-panel div div[name="page"] {
+	margin: 0 15px;
+}
+
+.control-panel div.go-button {
+	display: none;
+}
+
+
+
+#imageArea {
+	width: 100%;
+}
+
+#imageArea div.photo_container {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+#imageArea img.photo {
+	/*paddingとheightをjsで指定*/
+
+	/*height: 200px;*/
+	/*width: 200px;*/
+	width: auto;
+	box-sizing: border-box;
+	/*box-sizing: content-box;*/
+	/*float: left;*/
+	/*padding: 0.2%;*/
+/*	border: 20px solid;
+	border-color: yellow;*/
+	/*position: relative;*/
+}
+#imageArea .photo_container:hover img.photo {
+	/*opacity: 0.2;*/
+	/*opacity: 0;*/
+}
+
+#imageArea .photo_container div.imgDummy {
+	/* 透過した黒を重ねる */
+	/*background-color: rgba(0,0,0,0.5);*/
+	background-color: black;
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	/*content: ' ';*/
+	/*z-index: 1000000;*/
+}
+#imageArea .photo_container:hover div.imgDummy {
+	opacity: 0.4	;
+}
+
+#imageArea .photo_container img.X {
+	position: absolute;
+	/* 値はあとでjsで%でかえる */
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: auto;
+	z-index: 50;
+	opacity: 0;
+}
+#imageArea .photo_container:hover img.X {
+	opacity: 0.9;
+}
+
+#imageArea .photo_container .description {
+	color: #fff;
+	position: absolute;
+	/*left: 0;
+	top: 0;*/
+	bottom: 0;
+	box-sizing: border-box;
+	opacity: 0;
+	text-align:left;
+	-moz-transform: translate(20%, 0);
+	-ms-transform: translate(20%, 0);
+	-webkit-transform: translate(20%, 0);
+	transform: translate(20%, 0);
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#imageArea .photo_container:hover .description {
+	opacity: 1;
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#imageArea .photo_container .description p {
+	/*font-family: "Nachin", serif;*/
+	font-size: 12px;
+	line-height: 1.2;
+	white-space: pre;
+	overflow:hidden;
+}
+
+
+
+/*Magnific Popup*/
+div.mfp-title {
+	font-size: 14px;
+}
+
+
+
+footer {
+	clear: both;
+	text-align: center;	/*文字をセンタリング*/
+	padding: 10px 0px;	/*左から、上下、左右への余白*/
+	color: #333;		/*文字色*/
+	font-size: 10px;
+}
+footer a {
+	text-decoration: none;
+	border: none;
+	color: #333;	/*文字色*/
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+/*@media only screen and (max-width: 1000px) {*/
+
+
+
+	.PC {
+		display: none !important;
+	}
+
+	.SP {
+		display: block !important;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+
+	.PC {
+		display: none !important;
+	}
+
+	.SP {
+		display: block !important;
+	}
+
+}
+
+
+@media screen and (min-width: 641px) {
+/*@media screen and (min-width: 1001px){*/
+
+	.PC {
+		display: block !important;
+	}
+
+	.SP {
+		display: none !important;
+	}
+
+}
+
