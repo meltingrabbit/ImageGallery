@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+
+/* メニュー（SP）
+---------------------------------------------------------------------------*/
+#menuBox.SP {
+	width: 100%;
+}
+
+header div {
+	/*height: 25px;*/
+}
+
+#menuBox.SP img.logo {
+	width: 60%;
+	height: auto;
+	margin: 1% 20%;
+	display: inline;
+	vertical-align: middle;
+}
+#menuBox.SP a:hover img {
+	opacity: 1;
+}
+
+.SP #menu {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+.SP #menu li{
+	display: block;
+	float: left;
+	/*width: 12.5%;*/
+	margin: 0;
+	padding: 0;
+}
+.SP #menu li a {
+	display: block;
+	padding: 15px 0 15px;
+	background:rgba(0,0,0,0.7);
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+}
+.SP #menu li:last-child a{
+	border: none;
+}
+.SP #menu li a:hover{
+	background:rgba(0,0,0,0.7);
+}
+.SP #toggle {
+	display: none;
+}
+
+
+#menuBox.SP {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	z-index: 1000;
+}
+.SP #menu {
+	display: none;
+}
+.SP #menu li {
+	width: 100%;
+}
+.SP #toggle {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*background: rgba(0,0,0,0.7);*/
+	/*background: rgba(0,0,255,1);*/
+	background: rgba(0,0,0,1);
+}
+.SP #toggle a{
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #333333;
+	color:#FFF;
+	text-align: center;
+	text-decoration: none;
+}
+.SP #toggle img{
+	z-index: 100000000;
+}
+.SP #toggle:before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	background: url("../img/menu_button.png");
+	/*background: url(http://meltingrabbit.dip.jp/img/menu_button.png);*/
+}
+.SP #toggle a:before {
+	margin-top:-9px;
+}
+.SP #toggle a:after {
+	margin-top: 3px;
+}
+

@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* スタイルシートのリセット */
+
+
+
+body,div,dl,dt,dd,ul,li,ol,li,
+h1,h2,h3,h4,h5,form,p,
+table,th,td,address,input{
+	margin:0px;
+	padding:0px;
+}
+
+
+html {
+	/*font-size: 62.5%;*/
+}
+
+body {
+	line-height:1.9;
+	/*font-size: 2.0em;*/
+	/*font-family:"Hiragino Kaku Gothic W3", "Hiragino Kaku Gothic Pro", "メイリオ",  Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Verdana, "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;*/
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+	position: relative;
+}
+
+img{
+	border:0;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+ul,li,ol,li{
+	list-style:none;
+}
+
+a, a:link, a:visited{
+	outline:none;
+	text-decoration:none;
+}
+
+address{
+	font-style:normal;
+}
+
+textarea{
+	width:98%;
+	margin:5px 0;
+}
+
+iframe{
+	border:none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* clearfix */
+
+.clearfix {
+	*zoom:1;
+}
+
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+	height:0;
+}
+
+
+
+/*追加*/
+img {
+	display: block;
+}
+
