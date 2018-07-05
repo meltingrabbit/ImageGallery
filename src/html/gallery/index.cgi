@@ -131,7 +131,7 @@ print <<'EOM';
 	<meta property="og:title" content="溶けかけてるうさぎ - GALLERY">
 	<meta property="og:url" content="https://meltingrabbit.com/gallery/">
 	<meta property="og:image" content="https://meltingrabbit.com/img/icon_WB.png">
-	<meta property="og:site_name" content="溶けかけてるうさぎ - BLOG">
+	<meta property="og:site_name" content="溶けかけてるうさぎ">
 	<meta property="og:description" content="自作HPで写真を公開するためのページ．">
 
 	<!--<link href="./css/style_article.css" type="text/css" rel="stylesheet">-->
