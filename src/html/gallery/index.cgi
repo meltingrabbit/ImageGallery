@@ -121,6 +121,19 @@ print <<'EOM';
 	http://ichimaruni-design.com/2015/01/viewport/
 	-->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@_meltingrabbit">
+	<meta name="twitter:creator" content="@_meltingrabbit">
+	<meta name="twitter:title" content="溶けかけてるうさぎ - GALLERY">
+	<meta name="twitter:description" content="自作HPで写真を公開するためのページ．">
+	<meta name="twitter:image" content="https://meltingrabbit.com/img/icon_WB.png">
+	<meta property="og:title" content="溶けかけてるうさぎ - GALLERY">
+	<meta property="og:url" content="https://meltingrabbit.com/gallery/">
+	<meta property="og:image" content="https://meltingrabbit.com/img/icon_WB.png">
+	<meta property="og:site_name" content="溶けかけてるうさぎ - BLOG">
+	<meta property="og:description" content="自作HPで写真を公開するためのページ．">
+
 	<!--<link href="./css/style_article.css" type="text/css" rel="stylesheet">-->
 	<!--<link href="./css/navi.css" type="text/css" rel="stylesheet">-->
 EOM
